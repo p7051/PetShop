@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop</title>
+  <link rel="stylesheet" href="css\styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <a href="#" class="text-decoration-none text-dark d-flex align-items-center"> 
+                <img src="img/print-306214_1280.png" alt="Pet Shop" class="logo">
+                <span class="ms-2 petshop-name">Pet Shop</span> <!-- Nome da loja ao lado do logo -->
+            </a>
+        </div>
+        <div class="contact-info">
+            <p><strong>51 99999-9999</strong> | petshop@gmail.com</p>
+            <p>Porto Alegre, bairro 1, rua X n° 100</p>
+        </div>
+    </div>
+</header>
+
+<!-- Navegação -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="#">Pet Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro_cliente.html">Cadastro Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro_pet.html">Cadastro Pet</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <main>
+    <section class="hero text-center">
+      <h1>Conheça nossos produtos e serviços!</h1>
+      <p>Aqui você encontra tudo para cuidar do seu pet com amor e carinho.</p>
+     
+    </section>
+
+    <section class="services container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="img/racao.png" class="card-img-top product-image" alt="Produtos">
+            <div class="card-body">
+              <h5 class="card-title">Produtos</h5>
+              <p class="card-text">Rações, brinquedos e acessórios para seu pet.</p>
+              <a href="produtos.html" class="btn btn-dark">Ver Produtos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="img/animais.png" class="card-img-top product-image" alt="Serviços">
+            <div class="card-body">
+              <h5 class="card-title">Serviços</h5>
+              <p class="card-text">Banho, tosa e muito mais para o bem-estar do seu pet.</p>
+              <a href="servicos.html" class="btn btn-dark">Ver Serviços</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cadastre-se</h5>
+              <p class="card-text">Crie sua conta e aproveite todas as vantagens.</p>
+              <a href="cadastro_cliente.html" class="btn btn-dark">Cadastrar-se</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cadastrar Pet</h5>
+              <p class="card-text">Registre seu pet e acompanhe todos os serviços.</p>
+              <a href="cadastro_pet.html" class="btn btn-dark">Cadastrar Pet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+        <p class="mb-1">Pet Shop</p>
+        <p>51 99999-9999 | petshop@gmail.com</p>
+        <p>Porto Alegre, bairro 1, rua X n° 100</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
