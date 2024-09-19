@@ -62,7 +62,7 @@
             <div class="row text-center">
                 <div class="col-md-6 mb-4">
                     <div class="card p-4">
-                        <img src="img/dog1.png" alt="Pequeno Animal" class="img-fluid">
+                        <img src="img/dog1.jpg" alt="Pequeno Animal" class="img-fluid">
                         <h3 class="my-3">Banho para Pequenos Animais</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis blandit et pellentesque.</p>
                         <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalBanho">Agendar Banho</a>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="card p-4">
-                        <img src="img/dog2.png" alt="Grande Animal" class="img-fluid">
+                        <img src="img/dog2.jpg" alt="Grande Animal" class="img-fluid">
                         <h3 class="my-3">Banho para Grandes Animais</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis blandit et pellentesque.</p>
                         <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalBanho">Agendar Banho</a>
@@ -79,43 +79,68 @@
             </div>
         </section>
 
-        <!-- Modal para Agendar Banho -->
-        <div class="modal fade" id="modalBanho" tabindex="-1" aria-labelledby="modalBanhoLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalBanhoLabel">Agendar Banho</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="formAgendarBanho">
+            <!-- Modal para Agendar Banho -->
+    <div class="modal fade" id="modalBanho" tabindex="-1" aria-labelledby="modalBanhoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBanhoLabel">Agendar Banho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formAgendarBanho">
+                        <div class="mb-3">
+                            <label for="dataBanho" class="form-label">Selecione uma data</label>
+                            <input type="date" class="form-control" id="dataBanho" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horarioBanho" class="form-label">Selecione um horário</label>
+                            <select class="form-select" id="horarioBanho" required>
+                                <option value="" selected>Escolha...</option>
+                                <option value="08:00">08:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="15:00">15:00</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="servicoAdicional" class="form-label">Deseja incluir telebusca?</label>
+                            <input type="checkbox" id="telebuscaCheckbox" class="form-check-input">
+                        </div>
+                        <div id="telebuscaFields" style="display: none;">
                             <div class="mb-3">
-                                <label for="dataBanho" class="form-label">Selecione uma data</label>
-                                <input type="date" class="form-control" id="dataBanho" required>
+                                <label for="dataTelebusca" class="form-label">Selecione uma data para telebusca</label>
+                                <input type="date" class="form-control" id="dataTelebusca">
                             </div>
                             <div class="mb-3">
-                                <label for="horarioBanho" class="form-label">Selecione um horário</label>
-                                <select class="form-select" id="horarioBanho" required>
+                                <label for="horarioTelebusca" class="form-label">Selecione um horário para telebusca</label>
+                                <select class="form-select" id="horarioTelebusca">
                                     <option value="" selected>Escolha...</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="10:00">10:00</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="11:00">11:00</option>
                                     <option value="13:00">13:00</option>
-                                    <option value="15:00">15:00</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
-                        </form>
-                    </div>
+                            <div class="mb-3">
+                                <label for="enderecoTelebusca" class="form-label">Endereço de Telebusca</label>
+                                <input type="text" class="form-control" id="enderecoTelebusca" placeholder="Rua, número, bairro">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+
 
         <section class="my-5">
             <h2 class="text-center">Tosa</h2>
             <div class="row text-center">
                 <div class="col-md-6 mb-4">
                     <div class="card p-4">
-                        <img src="img/dog1.png" alt="Pequeno Animal" class="img-fluid">
+                        <img src="img/dog1.jpg" alt="Pequeno Animal" class="img-fluid">
                         <h3 class="my-3">Tosa para Pequenos Animais</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis blandit et pellentesque.</p>
                         <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalTosa">Agendar Tosa</a>
@@ -123,7 +148,7 @@
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="card p-4">
-                        <img src="img/dog2.png" alt="Grande Animal" class="img-fluid">
+                        <img src="img/dog2.jpg" alt="Grande Animal" class="img-fluid">
                         <h3 class="my-3">Tosa para Grandes Animais</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis blandit et pellentesque.</p>
                         <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalTosa">Agendar Tosa</a>
@@ -132,35 +157,60 @@
             </div>
 
             <!-- Modal para Agendar Tosa -->
-            <div class="modal fade" id="modalTosa" tabindex="-1" aria-labelledby="modalTosaLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTosaLabel">Agendar Tosa</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="formAgendarTosa">
+        <div class="modal fade" id="modalTosa" tabindex="-1" aria-labelledby="modalTosaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTosaLabel">Agendar Tosa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formAgendarTosa">
+                            <div class="mb-3">
+                                <label for="dataTosa" class="form-label">Selecione uma data</label>
+                                <input type="date" class="form-control" id="dataTosa" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="horarioTosa" class="form-label">Selecione um horário</label>
+                                <select class="form-select" id="horarioTosa" required>
+                                    <option value="" selected>Escolha...</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="servicoAdicional" class="form-label">Deseja incluir telebusca?</label>
+                                <input type="checkbox" id="telebuscaCheckboxTosa" class="form-check-input">
+                            </div>
+                            <div id="telebuscaFieldsTosa" style="display: none;">
                                 <div class="mb-3">
-                                    <label for="dataTosa" class="form-label">Selecione uma data</label>
-                                    <input type="date" class="form-control" id="dataTosa" required>
+                                    <label for="dataTelebuscaTosa" class="form-label">Selecione uma data para telebusca</label>
+                                    <input type="date" class="form-control" id="dataTelebuscaTosa">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="horarioTosa" class="form-label">Selecione um horário</label>
-                                    <select class="form-select" id="horarioTosa" required>
+                                    <label for="horarioTelebuscaTosa" class="form-label">Selecione um horário para telebusca</label>
+                                    <select class="form-select" id="horarioTelebuscaTosa">
                                         <option value="" selected>Escolha...</option>
+                                        <option value="07:00">07:00</option>
                                         <option value="09:00">09:00</option>
                                         <option value="11:00">11:00</option>
-                                        <option value="14:00">14:00</option>
-                                        <option value="16:00">16:00</option>
+                                        <option value="13:00">13:00</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
-                            </form>
-                        </div>
+                                <div class="mb-3">
+                                    <label for="enderecoTelebuscaTosa" class="form-label">Endereço de Telebusca</label>
+                                    <input type="text" class="form-control" id="enderecoTelebuscaTosa" placeholder="Rua, número, bairro">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
+
 
         </section>
     </main>

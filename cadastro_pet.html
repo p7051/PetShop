@@ -14,7 +14,7 @@
             <div class="d-flex align-items-center">
                 <a href="#" class="text-decoration-none text-dark d-flex align-items-center"> 
                     <img src="img/print-306214_1280.png" alt="Pet Shop" class="logo">
-                    <span class="ms-2 petshop-name">Pet Shop</span> <!-- Nome da loja ao lado do logo -->
+                    <span class="ms-2 petshop-name">Pet Shop</span>
                 </a>
             </div>
             <div class="contact-info">
@@ -55,59 +55,39 @@
 
     <!-- Conteúdo Principal -->
     <main class="container my-5">
-        <h1 class="text-center">Cadastro de Pet</h1>
+        <h1 class="text-center">Formulário de Cadastro de Pet</h1>
 
         <div class="row mt-5">
-            <!-- Formulário de Cadastro -->
             <div class="col-md-6">
-                <h2>Cadastro</h2>
                 <form id="cadastroPetForm">
-                    <h3>Dados do Tutor</h3>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="name">
+                        <label for="nomePet" class="form-label">Nome do Pet</label>
+                        <input type="text" class="form-control" id="nomePet" placeholder="Nome do Pet" required>
                     </div>
                     <div class="mb-3">
-                        <label for="telefone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+                        <label for="tipoPet" class="form-label">Tipo do Pet</label>
+                        <select class="form-select" id="tipoPet" required>
+                            <option value="">Selecione</option>
+                            <option value="Cachorro">Cachorro</option>
+                            <option value="Gato">Gato</option>
+                            <option value="Pássaro">Pássaro</option>
+                            <option value="Outro">Outro</option>
+                        </select>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        <label for="racaPet" class="form-label">Raça do Pet</label>
+                        <input type="text" class="form-control" id="racaPet" placeholder="Raça" required>
                     </div>
                     <div class="mb-3">
-                        <label for="endereco" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Endereço">
-                    </div>
-
-                    <h3>Dados do Pet</h3>
-                    <div class="mb-3">
-                        <label for="nome_pet" class="form-label">Nome do Pet</label>
-                        <input type="text" class="form-control" id="nome_pet" placeholder="Nome do Pet">
+                        <label for="idadePet" class="form-label">Idade do Pet</label>
+                        <input type="number" class="form-control" id="idadePet" placeholder="Idade" required>
                     </div>
                     <div class="mb-3">
-                        <label for="tipo_animal" class="form-label">Tipo de Animal</label>
-                        <input type="text" class="form-control" id="tipo_animal" placeholder="Tipo de Animal">
-                    </div>
-                    <div class="mb-3">
-                        <label for="raca_pet" class="form-label">Raça do Pet</label>
-                        <input type="text" class="form-control" id="raca_pet" placeholder="Raça do Pet">
-                    </div>
-                    <div class="mb-3">
-                        <label for="temperamento" class="form-label">Temperamento</label>
-                        <input type="text" class="form-control" id="temperamento" placeholder="Temperamento">
+                        <label for="observacoes" class="form-label">Observações</label>
+                        <textarea class="form-control" id="observacoes" rows="3" placeholder="Observações sobre o pet"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
                 </form>
-            </div>
-
-            <!-- Informações de Contato -->
-            <div class="col-md-6">
-                <h2>Contatos</h2>
-                <p>Porto Alegre, bairro 1, rua X n° 100</p>
-                <p>Email: petshop@gmail.com</p>
-                <p>Telefone: 51 99999-9999</p>
-                <p>Horário de atendimento: Segunda a sexta 8:00-20:00</p>
             </div>
         </div>
     </main>
@@ -118,13 +98,9 @@
             <p class="mb-1">Pet Shop</p>
             <p>51 99999-9999 | petshop@gmail.com</p>
             <p>Porto Alegre, bairro 1, rua X n° 100</p>
-            <div class="social-icons">
-                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
-            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/cadastro_pet.js"></script> <!-- Referência ao arquivo JS -->
 </body>
 </html>

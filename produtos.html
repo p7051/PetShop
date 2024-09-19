@@ -1,379 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos - Pet Shop</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="css/css/bootstrap.min.css" rel="stylesheet">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Pet Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
- 
 <body>
-  <!-- Cabeçalho -->
-  <header class="bg-light py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <a href="#" class="text-decoration-none text-dark d-flex align-items-center"> 
-          <img src="img/print-306214_1280.png" alt="Pet Shop" class="logo">
-          <span class="ms-2 petshop-name">Pet Shop</span>
-        </a>
-      </div>
-      <div class="contact-info">
-        <p><strong>51 99999-9999</strong> | petshop@gmail.com</p>
-        <p>Porto Alegre, bairro 1, rua X n° 100</p>
-      </div>
-    </div>
-  </header>
-
-  <!-- Navegação -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-      <a class="navbar-brand" href="#">Pet Shop</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="produtos.html">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicos.html">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cadastro_cliente.html">Cadastro Cliente</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cadastro_pet.html">Cadastro Pet</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Seção de Produtos -->
-    <section class="products-section text-center my-5">
-      <h1>Produtos Disponíveis</h1>
-
-      <!-- Ração Seca -->
-      <h2 class="category-title">Ração Seca</h2>
-      <div id="dryFoodCarousel" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row justify-content-center">
-                <!-- Produtos Ração Seca -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Vitalidade</h5>
-                      <p class="price">$24.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Felina Gourmet</h5>
-                      <p class="price">$22.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Premium Plus</h5>
-                      <p class="price">$26.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Novos Produtos Ração Seca -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Nutritiva</h5>
-                      <p class="price">$23.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Felina Premium</h5>
-                      <p class="price">$21.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Elite</h5>
-                      <p class="price">$27.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Cabeçalho -->
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                    <img src="img/print-306214_1280.png" alt="Pet Shop" class="logo">
+                    <span class="ms-2 petshop-name">Pet Shop</span>
+                </a>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row justify-content-center">
-                <!-- Produtos Ração Seca (Repetidos) -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Vitalidade</h5>
-                      <p class="price">$24.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Felina Gourmet</h5>
-                      <p class="price">$22.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Premium Plus</h5>
-                      <p class="price">$26.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Novos Produtos Ração Seca (Repetidos) -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Nutritiva</h5>
-                      <p class="price">$23.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Felina Premium</h5>
-                      <p class="price">$21.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Seca">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Canina Elite</h5>
-                      <p class="price">$27.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="contact-info">
+                <p><strong>51 99999-9999</strong> | petshop@gmail.com</p>
+                <p>Porto Alegre, bairro 1, rua X n° 100</p>
             </div>
-          </div>
         </div>
-        <a class="carousel-control-prev" href="#dryFoodCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#dryFoodCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
+    </header>
 
-      <!-- Ração Úmida -->
-      <h2 class="category-title">Ração Úmida</h2>
-      <div id="wetFoodCarousel" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row justify-content-center">
-                <!-- Produtos Ração Úmida -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Canina</h5>
-                      <p class="price">$14.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Felina</h5>
-                      <p class="price">$13.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Premium</h5>
-                      <p class="price">$16.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Novos Produtos Ração Úmida -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Nutritiva</h5>
-                      <p class="price">$15.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Gourmet</h5>
-                      <p class="price">$12.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Elite</h5>
-                      <p class="price">$17.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pet Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro_cliente.html">Cadastro Cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro_pet.html">Cadastro Pet</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row justify-content-center">
-                <!-- Produtos Ração Úmida (Repetidos) -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Canina</h5>
-                      <p class="price">$14.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Felina</h5>
-                      <p class="price">$13.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Premium</h5>
-                      <p class="price">$16.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Novos Produtos Ração Úmida (Repetidos) -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao1.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Nutritiva</h5>
-                      <p class="price">$15.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao2.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Gourmet</h5>
-                      <p class="price">$12.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/racao3.png" class="card-img-top" alt="Ração Úmida">
-                    <div class="card-body">
-                      <h5 class="card-title">Ração Úmida Elite</h5>
-                      <p class="price">$17.99</p>
-                      <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <a class="carousel-control-prev" href="#wetFoodCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#wetFoodCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
-    </section>
-  </main>
+    </nav>
 
-  <!-- Rodapé -->
-  <footer class="bg-light text-center py-4">
-    <p>&copy; 2024 PetShop - Todos os direitos reservados</p>
-    <p>Rua Exemplo, 123 - Bairro Exemplo - Cidade, Estado</p>
-    <p>Email: contato@petshop.com.br | Telefone: (11) 1234-5678</p>
-  </footer>
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Ração Seca</h2>
+        <div class="custom-carousel-container">
+            <div class="custom-carousel" id="carousel-seca">
+                <div class="custom-carousel-item">
+                    <img src="img/racao.jpg" alt="Ração Seca 1">
+                    <div class="product-description">
+                        <h5>Ração Seca Premium 1</h5>
+                        <p>Alta qualidade para cães adultos - 10kg</p>
+                        <p><strong>R$ 120,00</strong></p>
+                    </div>
+                </div>
+                <div class="custom-carousel-item">
+                    <img src="img/racao2.jpg" alt="Ração Seca 2">
+                    <div class="product-description">
+                        <h5>Ração Seca Premium 2</h5>
+                        <p>Nutrição balanceada para cães filhotes - 15kg</p>
+                        <p><strong>R$ 180,00</strong></p>
+                    </div>
+                </div>
+                <div class="custom-carousel-item">
+                    <img src="img/racao3.jpg" alt="Ração Seca 3">
+                    <div class="product-description">
+                        <h5>Ração Seca Premium 3</h5>
+                        <p>Ração natural para cães adultos - 12kg</p>
+                        <p><strong>R$ 150,00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev" onclick="prevSlide('carousel-seca')">❮</button>
+                <button class="next" onclick="nextSlide('carousel-seca')">❯</button>
+            </div>
+        </div>
 
-  <!-- Scripts JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9KZWn0O4pDWzWwB8y9vrE8Dh+9TfE9u4F1TA+0LwFUVQz3o6nTf5" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-1vv0VxM5j2w46nTxTrCg4gErJqWg2q6dBDz2HqzzM7flxIeTHw/6cL3MFS5g5L7U8" crossorigin="anonymous"></script>
+        <h2 class="text-center mt-5 mb-4">Ração Úmida</h2>
+        <div class="custom-carousel-container">
+            <div class="custom-carousel" id="carousel-umida">
+                <div class="custom-carousel-item">
+                    <img src="img/lata.jpg" alt="Ração Úmida 1">
+                    <div class="product-description">
+                        <h5>Ração Úmida Premium 1</h5>
+                        <p>Sabor frango e vegetais - 300g</p>
+                        <p><strong>R$ 15,00</strong></p>
+                    </div>
+                </div>
+                <div class="custom-carousel-item">
+                    <img src="img/lata2.jpg" alt="Ração Úmida 2">
+                    <div class="product-description">
+                        <h5>Ração Úmida Premium 2</h5>
+                        <p>Sabor carne ao molho - 350g</p>
+                        <p><strong>R$ 17,00</strong></p>
+                    </div>
+                </div>
+                <div class="custom-carousel-item">
+                    <img src="img/lata.jpg" alt="Ração Úmida 3">
+                    <div class="product-description">
+                        <h5>Ração Úmida Premium 3</h5>
+                        <p>Sabor salmão e arroz - 300g</p>
+                        <p><strong>R$ 16,00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prev" onclick="prevSlide('carousel-umida')">❮</button>
+                <button class="next" onclick="nextSlide('carousel-umida')">❯</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <p>&copy; 2024 PetShop - Todos os direitos reservados</p>
+        <p>Rua Exemplo, 123 - Bairro Exemplo - Cidade, Estado</p>
+        <p>Email: contato@petshop.com.br | Telefone: (11) 1234-5678</p>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="js/produtos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 

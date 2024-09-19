@@ -1,11 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 .logo {
     width: 60px;
     height: auto; /* Mantém a proporção */
-    max-width: 100%; /* Garante que a logo não ultrapasse o contêiner */
+    max-width: 100%;
 }
 
 .contact-info {
@@ -25,46 +27,66 @@ main {
     padding-top: 20px;
 }
 
-h1 {
-    font-size: 2.5rem;
+h1, h2 {
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.custom-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
-.card {
+.custom-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.custom-carousel img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-description {
+    margin-top: 10px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%; /* Ajusta a imagem para ocupar a largura completa da div */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.product-image {
-    max-height: 300px; /* Limita a altura das imagens */
-    object-fit: cover; /* Garante que a imagem se ajuste ao espaço sem distorção */
-}
-
-.card h5 {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.btn-dark {
-    background-color: #333;
-    border: none;
+.controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -76,24 +98,5 @@ footer p {
     margin: 0;
 }
 
-footer .social-icons a {
-    margin-right: 10px;
-    color: #000;
-}
 
-footer .social-icons a:hover {
-    text-decoration: underline;
-}
 
-.card-img-top {
-    max-height: 200px;
-    object-fit: cover;
-  }
-  .price {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
